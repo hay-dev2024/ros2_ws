@@ -3,6 +3,11 @@ build/
 install/
 log/
 
+# ROS 2 bag recordings
+rosbag2_*/
+*.db3
+*.mcap
+
 # Python generated files
 __pycache__/
 *.py[cod]

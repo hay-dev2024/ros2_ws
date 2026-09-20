@@ -1,23 +1,19 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>robot_nodes</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="hay@todo.todo">hay</maintainer>
+  <name>robot_gazebo</name>
+  <version>0.0.1</version>
+  <description>8일차 실습 — 가상 로봇(LiDAR/Camera/IMU) Gazebo 월드</description>
+  <maintainer email="sohyun@example.com">sohyun</maintainer>
   <license>Apache-2.0</license>
 
-  <depend>rclpy</depend>
-  <depend>std_msgs</depend>
-  <depend>sensor_msgs</depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
-
-  <!-- turtlesim launch 실행에 필요 (직접 import는 안 하지만 exec 시점에 필요) -->
-  <exec_depend>turtlesim</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
